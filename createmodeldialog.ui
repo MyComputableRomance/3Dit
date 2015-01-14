@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CreateModelDialog</class>
+ <widget class="QWidget" name="CreateModelDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>950</width>
+    <height>678</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="gridWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>930</width>
+     <height>618</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="2" column="5">
+     <widget class="QPushButton" name="Btn_Create_PentagonalPrism">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/CreateModels/Image/CreateModels/seven_prism.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QPushButton" name="Btn_Create_PentagonalPyramid">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/CreateModels/Image/CreateModels/seven_pyramid.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="6">
+     <widget class="QPushButton" name="Btn_Create_TriangularRing">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/CreateModels/Image/CreateModels/triangular_ring.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="3">
+     <widget class="QPushButton" name="Btn_Create_SevenPyramid">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/CreateModels/Image/CreateModels/seven_pyramid.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="Btn_Create_Ring">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/CreateModels/Image/CreateModels/ring.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="Btn_Create_Cylinder">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{	
+	border-image: url(:/CreateModels/Image/CreateModels/cylinder.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="Btn_Create_Cone">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/CreateModels/Image/CreateModels/cone.png);
+	border-left-width: 150;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="Btn_Create_RectangularPyramid">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/CreateModels/Image/CreateModels/rectangular_pyramid.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QPushButton" name="Btn_Create_HexagonalPyramid">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/CreateModels/Image/CreateModels/hexagonal_pyramid.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="Btn_Create_RectangularPrism">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/CreateModels/Image/CreateModels/rectangular_prism.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QPushButton" name="Btn_Create_TriangularPyramid">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>150</horstretch>
+        <verstretch>150</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/CreateModels/Image/CreateModels/triangular_pyramid.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="5">
+     <widget class="QPushButton" name="Btn_Create_TriangularPrism">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/CreateModels/Image/CreateModels/triangular_prism.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QPushButton" name="Btn_Create_HexagonalPrism">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/CreateModels/Image/CreateModels/hexagonal_prism.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="6">
+     <widget class="QPushButton" name="Btn_Create_SevenRing">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/CreateModels/Image/CreateModels/seven_ring.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QPushButton" name="Btn_Create_RectangularRing">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/CreateModels/Image/CreateModels/rectangular_ring.png);
+	border-left-width: 150;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="6">
+     <widget class="QPushButton" name="Btn_Create_PentagonalRing">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/CreateModels/Image/CreateModels/seven_ring.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="2">
+     <widget class="QPushButton" name="Btn_Create_HexangonalRing">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/CreateModels/Image/CreateModels/hexagonal_ring.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="5">
+     <widget class="QPushButton" name="Btn_Create_SevenPrism">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/CreateModels/Image/CreateModels/seven_prism.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QPushButton" name="Btn_Create_EightPyramid">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/CreateModels/Image/CreateModels/eight_pyramid.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QPushButton" name="Btn_Create_EightPrism">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/CreateModels/Image/CreateModels/eight_prism.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="2">
+     <widget class="QPushButton" name="Btn_Create_EightRing">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/CreateModels/Image/CreateModels/eight_ring.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="3">
+     <widget class="QPushButton" name="Btn_Create_Sphere">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/CreateModels/Image/CreateModels/sphere.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="DraggableWidget" name="header" native="true">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>5</y>
+     <width>940</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>91</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	font: 14px &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string>Create</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="close">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>5</y>
+      <width>26</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/Dialog/Image/Dialog/close.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="header_background" native="true">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>5</y>
+     <width>940</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(69, 69, 69);
+</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="background" native="true">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>5</y>
+     <width>940</width>
+     <height>668</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#background{
+	background-color:rgb(227, 227, 227);
+}</string>
+   </property>
+  </widget>
+  <zorder>background</zorder>
+  <zorder>header_background</zorder>
+  <zorder>gridWidget</zorder>
+  <zorder>header</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>DraggableWidget</class>
+   <extends>QWidget</extends>
+   <header>draggablewidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

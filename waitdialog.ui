@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WaitDialog</class>
+ <widget class="QWidget" name="WaitDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>440</width>
+    <height>280</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#background{
+	background-color: rgb(227, 227, 227);
+}</string>
+  </property>
+  <widget class="DraggableWidget" name="header" native="true">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>5</y>
+     <width>430</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>171</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>40</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>40</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	font: 14px &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string>Generating GCode ...</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QProgressBar" name="progressBar">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>420</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QProgressBar::chunk{
+	background-color: rgb(255, 151, 5);
+}</string>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+   <property name="textVisible">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="output">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>79</y>
+     <width>420</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="header_background" native="true">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>5</y>
+     <width>430</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(69, 69, 69);
+</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="background" native="true">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>5</y>
+     <width>430</width>
+     <height>270</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#background{
+	background-color: rgb(227, 227, 227);
+}</string>
+   </property>
+  </widget>
+  <zorder>background</zorder>
+  <zorder>header_background</zorder>
+  <zorder>header</zorder>
+  <zorder>progressBar</zorder>
+  <zorder>output</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>DraggableWidget</class>
+   <extends>QWidget</extends>
+   <header>draggablewidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

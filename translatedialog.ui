@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TranslateDialog</class>
+ <widget class="QWidget" name="TranslateDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Moving</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>224</y>
+     <width>288</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(218, 218, 218);</string>
+   </property>
+   <widget class="QPushButton" name="btn_determine">
+    <property name="geometry">
+     <rect>
+      <x>84</x>
+      <y>15</y>
+      <width>120</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-image: url(:/Dialog/Image/Dialog/determine.png);
+	border:none;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="DraggableWidget" name="header" native="true">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>5</y>
+     <width>290</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent</string>
+   </property>
+   <widget class="QPushButton" name="close">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>5</y>
+      <width>26</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/Dialog/Image/Dialog/close.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>81</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	font: 14px &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string>Moving</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>5</y>
+     <width>290</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(69, 69, 69);
+</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="translate_y">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>117</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox{
+	border:none;
+	font: 75 14px &quot;Arial&quot;;
+    
+	color: rgb(255, 255, 255);
+	border-image: url(:/Tabwidget/Image/Tabwidget/drop_down_list_background.png);
+	border-left-width: 6px;
+	border-right-width: 6px;
+
+	padding-left: 4px;
+}
+QDoubleSpinBox::up-button {
+	border:none;
+	width:19px;
+	border-image: url(:/Dialog/Image/Dialog/UpArrow.png);
+}
+QDoubleSpinBox::down-button {
+	border:none;
+	width:19px;
+	border-image: url(:/Dialog/Image/Dialog/DownArrow.png);
+}</string>
+   </property>
+   <property name="minimum">
+    <double>-2000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>2000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>67</y>
+     <width>16</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14px &quot;Arial&quot;;
+color: rgb(51, 51, 51);</string>
+   </property>
+   <property name="text">
+    <string>x:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="translate_x">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>67</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox{
+	border:none;
+	font: 75 14px &quot;Arial&quot;;
+    
+	color: rgb(255, 255, 255);
+	border-image: url(:/Tabwidget/Image/Tabwidget/drop_down_list_background.png);
+	border-left-width: 6px;
+	border-right-width: 6px;
+
+	padding-left: 4px;
+}
+QDoubleSpinBox::up-button {
+	border:none;
+	width:19px;
+	border-image: url(:/Dialog/Image/Dialog/UpArrow.png);
+}
+QDoubleSpinBox::down-button {
+	border:none;
+	width:19px;
+	border-image: url(:/Dialog/Image/Dialog/DownArrow.png);
+}</string>
+   </property>
+   <property name="minimum">
+    <double>-2000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>2000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>167</y>
+     <width>16</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14px &quot;Arial&quot;;
+color: rgb(51, 51, 51);</string>
+   </property>
+   <property name="text">
+    <string>z:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="translate_z">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>167</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox{
+	border:none;
+	font: 75 14px &quot;Arial&quot;;
+    
+	color: rgb(255, 255, 255);
+	border-image: url(:/Tabwidget/Image/Tabwidget/drop_down_list_background.png);
+	border-left-width: 6px;
+	border-right-width: 6px;
+
+	padding-left: 4px;
+}
+QDoubleSpinBox::up-button {
+	border:none;
+	width:19px;
+	border-image: url(:/Dialog/Image/Dialog/UpArrow.png);
+}
+QDoubleSpinBox::down-button {
+	border:none;
+	width:19px;
+	border-image: url(:/Dialog/Image/Dialog/DownArrow.png);
+}</string>
+   </property>
+   <property name="minimum">
+    <double>-2000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>2000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>117</y>
+     <width>16</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14px &quot;Arial&quot;;
+color: rgb(51, 51, 51);</string>
+   </property>
+   <property name="text">
+    <string>y:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="background" native="true">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>5</y>
+     <width>290</width>
+     <height>289</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#background{
+	background-color: rgb(227, 227, 227);
+}</string>
+   </property>
+  </widget>
+  <zorder>background</zorder>
+  <zorder>widget</zorder>
+  <zorder>widget_2</zorder>
+  <zorder>header</zorder>
+  <zorder>translate_y</zorder>
+  <zorder>label_2</zorder>
+  <zorder>translate_x</zorder>
+  <zorder>label_3</zorder>
+  <zorder>translate_z</zorder>
+  <zorder>label_4</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>DraggableWidget</class>
+   <extends>QWidget</extends>
+   <header>draggablewidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
