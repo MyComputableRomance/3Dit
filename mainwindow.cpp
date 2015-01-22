@@ -1044,10 +1044,9 @@ void MainWindow::on_left_print_c_1_clicked()
     QString layerHeight = "--layer-height "+QString::number(resolution,'g',2);
     QString fillDensity = "--fill-density "+QString::number(density,'g',1);
     QString perimeters = "--perimeters "+QString::number(perimeter,10);
-    QString printCenter = "--print-center 0,0";
     QString outputPath = "--output "+gcodeFileName;
     QStringList cmdLine;
-    QString scmd = slic3rPath+" "+configFile+" "+stlFileName+" "+layerHeight+" "+fillDensity+" "+perimeters+" "+printCenter+" "+outputPath;
+    QString scmd = slic3rPath+" "+configFile+" "+stlFileName+" "+layerHeight+" "+fillDensity+" "+perimeters+" "+outputPath;
     cmdLine << "/c" << scmd;
     gt->getCmd(cmdLine);
     gt->run();
@@ -1168,9 +1167,8 @@ void MainWindow::doPreview(bool isChecked){
             QString fd = "--fill-density "+QString::number(density,'g',1);
             QString pm = "--perimeters "+QString::number(perimeter,10);
             QString outputPath = "--output "+gcodeFileName;
-            QString printCenter = "--print-center 0,0";
             QString configFile = "--load CONFIG/BlackSmithD4.ini";
-            QString scmd = slic3rPath+" "+stlFileName+" "+outputPath+" "+lh+" "+fd+" "+pm+" "+printCenter+" "+configFile;
+            QString scmd = slic3rPath+" "+stlFileName+" "+outputPath+" "+lh+" "+fd+" "+pm+" "+configFile;
             QStringList cmdline;
             cmdline << "/c" << scmd;
 
@@ -1217,7 +1215,7 @@ void MainWindow::onDrawPreview()
     //Get gcode file:
     QFile gfile(gcodeFileName);
     if(!gfile.open(QIODevice::ReadOnly | QIODevice::Text)){
-        MainWindow::showMessageBox("Previewing", "Failed to read gcode file.223333");
+        MainWindow::showMessageBox("Previewing", "Failed to read gcode file.");
         ui->left_preview_c_1->setChecked(false);
         ui->left_preview_e_2->setChecked(false);
         QFile::remove(stlFileName);
